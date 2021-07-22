@@ -1,4 +1,29 @@
-//const odd = require('test_module.js'); // 내장 모듈 또는 외부 설치 모듈
+//const odd = 3;
+//const even = 10;
 
-//const odd = require("./test_module.js"); // 상대 경로, 절대 경로를 명시
-const odd=require("./test_module") // .js 생략가능
+//module.exports = odd;
+
+/*
+const sum = function (a, b) {
+	return a + b;
+};
+
+module.exports = sum;
+*/
+
+const member = {
+	login : function (memId, memPw) {
+		console.log("로그인 실행");
+	},
+	logout : function() {
+		console.log("로그아웃");
+	},
+	join : function() {
+		console.log("회원가입");
+	},
+	update : function() {
+		console.log("회원정보 수정");
+	}
+};
+
+module.exports = member;
